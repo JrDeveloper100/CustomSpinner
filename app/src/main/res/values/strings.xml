@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CustomSpinner</string>
+    <string-array name="items">
+        <item>List item</item>
+        <item>List item</item>
+        <item>List item</item>
+    </string-array>
 </resources>

@@ -6,17 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Spinner
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/customSpinner"
-        android:layout_width="200dp"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:popupBackground="@drawable/round_shape"
-        android:background="@drawable/spinner_icon_design_default"
-        android:dropDownVerticalOffset="60dp"
-        android:dropDownWidth="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+        
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            style="@style/CustomAutoCompleteTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/design2"
+            android:layout_weight="1"
+            android:dropDownVerticalOffset="10dp"
+            android:inputType="none"
+            android:text="Input"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
